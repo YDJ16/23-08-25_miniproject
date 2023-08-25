@@ -77,7 +77,7 @@
 }
 #logo_nav > h1 {
   margin-top: 23px;
-  margin-left: 4px;
+  margin-left: 10px;
 }
 #nav {
   display:flex;
@@ -122,7 +122,7 @@
   line-height: 26px;
 }
 #nav_text {
-  margin-left: 178px;
+  margin-left: 185px;
   margin-top: 9px;
   line-height: 2em;
 }
