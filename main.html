@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>매할일</title>
+  <link rel="icon" href="img/checkbox_favicon32.png" sizes="32x32" type="image/png">
   <script src="https://kit.fontawesome.com/77d5171cb8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="mainStyle.css">
 </head>
@@ -12,7 +13,7 @@
     <div id="header">
       <div id="logo_nav">
         <a href="main.html">
-          <img src="img/checkbox.png" width="40px" height="40px">
+          <img src="img/checkbox.png" id="logoImg" width="40px" height="40px">
         </a>
         <h1><a href="main.html">매할일</a></h1>
         <ul id="nav">
@@ -213,6 +214,15 @@
       imgs[n].style.display = "block";
     }
     //이미지 슬라이드 끝
+    //로고 회전 시작
+  const rotatingImage = document.getElementById('logoImg');
+  let rotationAngle = 0;
+
+  function rotateImage() {
+    rotationAngle += 30; // 30도씩 회전
+    rotatingImage.style.transform = `rotate(${rotationAngle}deg)`;
+  }
+  setInterval(rotateImage, 1000);
   </script>
 </body>
 </html>
